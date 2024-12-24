@@ -1,0 +1,45 @@
+Total Comparisons: 12411
+Total Moves: 6787
+Total Comparison Time: 0.000961 seconds
+Total Move Time: 0.000632 seconds
+Total Sorting Time: 0.012242 seconds
+
+Comparison time for N data:
+   Time for 100 comparisons: 0.000082 seconds
+   Time for 500 comparisons: 0.000349 seconds
+   Time for 1000 comparisons: 0.000601 seconds
+Move/Swap time for N data:
+   Time for 100 moves: 0.000083 seconds
+   Time for 500 moves: 0.000350 seconds
+   Time for 1000 moves: 0.000976 seconds
+--------------------------------
+Total Comparisons: 12411
+Total Moves: 6787
+Total Comparison Time: 0.001387 seconds
+Total Move Time: 0.000796 seconds
+Total Sorting Time: 0.016851 seconds
+
+Comparison time for N data:
+   Time for 100 comparisons: 0.000102 seconds
+   Time for 500 comparisons: 0.000408 seconds
+   Time for 1000 comparisons: 0.000688 seconds
+Move/Swap time for N data:
+   Time for 100 moves: 0.000103 seconds
+   Time for 500 moves: 0.000409 seconds
+   Time for 1000 moves: 0.001111 seconds
+--------------------------------
+Total Comparisons: 12411
+Total Moves: 6787
+Total Comparison Time: 0.001899 seconds
+Total Move Time: 0.001030 seconds
+Total Sorting Time: 0.020756 seconds
+
+Comparison time for N data:
+   Time for 100 comparisons: 0.000114 seconds
+   Time for 500 comparisons: 0.000553 seconds
+   Time for 1000 comparisons: 0.001068 seconds
+Move/Swap time for N data:
+   Time for 100 moves: 0.000116 seconds
+   Time for 500 moves: 0.000554 seconds
+   Time for 1000 moves: 0.001793 seconds
+--------------------------------
