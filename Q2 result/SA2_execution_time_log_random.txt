@@ -1,0 +1,30 @@
+Total Comparisons: 14360
+Total Moves: 14360
+Total Comparison Time: 0.039087 seconds
+Total Move Time: 0.029702 seconds
+Total Sorting Time: 0.076875 seconds
+
+Comparison time for N data:
+   Time for 100 comparisons: 0.008229 seconds
+   Time for 500 comparisons: 0.009214 seconds
+   Time for 1000 comparisons: 0.010492 seconds
+Move/Swap time for N data:
+   Time for 100 moves: 0.011927 seconds
+   Time for 500 moves: 0.012780 seconds
+   Time for 1000 moves: 0.013729 seconds
+--------------------------------
+Total Comparisons: 14360
+Total Moves: 14360
+Total Comparison Time: 0.038868 seconds
+Total Move Time: 0.029748 seconds
+Total Sorting Time: 0.077111 seconds
+
+Comparison time for N data:
+   Time for 100 comparisons: 0.008699 seconds
+   Time for 500 comparisons: 0.009787 seconds
+   Time for 1000 comparisons: 0.011145 seconds
+Move/Swap time for N data:
+   Time for 100 moves: 0.012539 seconds
+   Time for 500 moves: 0.013305 seconds
+   Time for 1000 moves: 0.014292 seconds
+--------------------------------

@@ -1,0 +1,15 @@
+Total Comparisons: 12411
+Total Moves: 6787
+Total Comparison Time: 0.000961 seconds
+Total Move Time: 0.000632 seconds
+Total Sorting Time: 0.012242 seconds
+
+Comparison time for N data:
+   Time for 100 comparisons: 0.000082 seconds
+   Time for 500 comparisons: 0.000349 seconds
+   Time for 1000 comparisons: 0.000601 seconds
+Move/Swap time for N data:
+   Time for 100 moves: 0.000083 seconds
+   Time for 500 moves: 0.000350 seconds
+   Time for 1000 moves: 0.000976 seconds
+--------------------------------

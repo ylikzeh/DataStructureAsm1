@@ -5,20 +5,20 @@ from excel_utility import write_sorted_books_to_file
 def main():
     while True:
         print("Which Excel file would you like to sort?")
-        print("1. Excel with sorted book data")
+        print("1. Excel with random book data")
         print("2. Excel with nearly sorted book data")
         print("0. Exit")
         choice = input("Enter 1, 2, or 0 to exit: ")
 
         if choice == '1':
-            file_path = "data_sorted.xlsx"  # Replace with the actual path for Excel A
-            execution_time_log_path = 'SA2_execution_time_log_sorted.txt'
-            sorted_data_path = 'SA2_sorted_book_data_sorted.txt'
+            file_path = "data_random.xlsx"  # Replace with the actual path for Excel A
+            execution_time_log_path = 'Q2 result/SA2_execution_time_log_random.txt'
+            sorted_data_path = 'Q2 result/SA2_sorted_book_data_random.txt'
             break
         elif choice == '2':
-            file_path = 'data_sorted.xlsx'  # Replace with the actual path for Excel B
-            execution_time_log_path = 'SA2_execution_time_log_nearly_sorted.txt'
-            sorted_data_path = 'SA2_sorted_book_data_nearly_sorted.txt'
+            file_path = 'data_nearly_sorted.xlsx'  # Replace with the actual path for Excel B
+            execution_time_log_path = 'Q2 result/SA2_execution_time_log_nearly_sorted.txt'
+            sorted_data_path = 'Q2 result/SA2_sorted_book_data_nearly_sorted.txt'
             break
         elif choice == '0':
             print("Exiting the program.")
