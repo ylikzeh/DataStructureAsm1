@@ -204,6 +204,12 @@
         <mxCell id="pAY9yNk4vQZ0Y14cktkZ-15" value="True" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="590" y="1105" width="50" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="pAY9yNk4vQZ0Y14cktkZ-17" value="True" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="158" y="385" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pAY9yNk4vQZ0Y14cktkZ-18" value="False" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="460" width="50" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
