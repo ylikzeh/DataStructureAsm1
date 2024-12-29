@@ -130,11 +130,13 @@ def sort_books_and_measure_time(books):
     return compare_time, move_time, sort_time, compare_milestones, move_milestones, all_compare_times, all_move_times, compare_count, move_count
 
 # Main function to sort and log results
-def test_import_and_sort(file_path, execution_time_log_sorted):
+def test_import_and_sort(file_path, execution_time_log_sorted,dataset_size):
     books = import_books_from_excel(file_path)
-
+    if dataset_size==100:
+        write_books_to_matrix(books,False)
     compare_time, move_time, sort_time, compare_milestones, move_milestones, all_compare_times, all_move_times, compare_count, move_count = sort_books_and_measure_time(books)
 
+    print(f"Execution Time Summary for datasize of {dataset_size} data:")
     print(f"Total Comparisons: {compare_count}")
     print(f"Total Moves: {move_count}")
     
@@ -151,6 +153,7 @@ def test_import_and_sort(file_path, execution_time_log_sorted):
         print(f"    Time for {milestone} moves: {milestone_time:.6f} seconds")
 
     with open(execution_time_log_sorted, "a+") as log_file:
+        log_file.write(f"Execution Time Summary for datasize of {dataset_size} data: \n")
         log_file.write(f"Total Comparisons: {compare_count}\n")
         log_file.write(f"Total Moves: {move_count}\n")
         
@@ -184,31 +187,79 @@ def write_sorted_books_to_file(books, sorted_data_path):
             f.write("---------------------------------\n")
             counter += 1
     print(f"Sorted books have been written to {sorted_data_path}")
+    
+def write_books_to_matrix(books,status):
+    counter = 1
+    print ("---------------------------------")
+    if status:
+        print ("Sorted book matrix :")
+    else:
+        print ("Unsorted book matrix :")
+    
+    for book in books:
+        print(f"{book.isbn:<10}", end=' ') 
+        
+        if counter%10==0 and counter!=0:
+            print()
+        counter += 1
+    print ("---------------------------------")
 
 # Main function to ask user for input
 def main():
     while True:
         print("Which Excel file would you like to sort?")
-        print("1. Excel with random book data")
-        print("2. Excel with nearly sorted book data")
-        choice = input("Enter 1 or 2: ")
-
+        print("1. Excel with 100 row of random book data")
+        print("2. Excel with 100 row nearly sorted book data")
+        print("3. Excel with 500 row of random book data")
+        print("4. Excel with 500 row nearly sorted book data")
+        print("5. Excel with 1000 row of random book data")
+        print("6. Excel with 1000 row nearly sorted book data")
+        choice = input("Enter 1 to 6 to choose operation: ")
+        dataset_size = 0
         if choice == '1':
-            file_path = "data_random.xlsx"  # Replace with the actual path for Excel A
+            file_path = "data_random_100.xlsx"
             execution_time_log_path = 'SA1_execution_time_log_random.txt'
             sorted_data_path = 'SA1_sorted_book_data_random.txt'
+            dataset_size = 100
             break
         elif choice == '2':
-            file_path = 'data_nearly_sorted.xlsx'  # Replace with the actual path for Excel B
+            file_path = 'data_nearly_sorted_100.xlsx'
             execution_time_log_path = 'SA1_execution_time_log_nearly_sorted.txt'
             sorted_data_path = 'SA1_sorted_book_data_nearly_sorted.txt'
+            dataset_size = 100
+            break
+        elif choice == '3':
+            file_path = 'data_random_500.xlsx'
+            execution_time_log_path = 'SA1_execution_time_log_random.txt'
+            sorted_data_path = 'SA1_sorted_book_data_random.txt'
+            dataset_size = 500
+            break
+        elif choice == '4':
+            file_path = 'data_nearly_sorted_500.xlsx'
+            execution_time_log_path = 'SA1_execution_time_log_nearly_sorted.txt'
+            sorted_data_path = 'SA1_sorted_book_data_nearly_sorted.txt'
+            dataset_size = 500
+            break
+        elif choice == '5':
+            file_path = 'data_random_1000.xlsx'
+            execution_time_log_path = 'SA1_execution_time_log_random.txt'
+            sorted_data_path = 'SA1_sorted_book_data_random.txt'
+            dataset_size = 1000
+            break
+        elif choice == '6':
+            file_path = 'data_nearly_sorted_1000.xlsx'
+            execution_time_log_path = 'SA1_execution_time_log_nearly_sorted.txt'
+            sorted_data_path = 'SA1_sorted_book_data_nearly_sorted.txt'
+            dataset_size = 1000
             break
         else:
-            print("Invalid choice. Please enter 1 or 2.")
+            print("Invalid choice. Please enter 1 to 6.")
 
     # Once the user selects a valid option, call the sorting function
-    books = test_import_and_sort(file_path, execution_time_log_path)
+    books = test_import_and_sort(file_path, execution_time_log_path,dataset_size)
     print(f"Execution time for compare and move operation has been written to {execution_time_log_path}")
+    if dataset_size==100:
+        write_books_to_matrix(books, True)
     write_sorted_books_to_file(books, sorted_data_path)  # Write sorted books to file
 
 if __name__ == '__main__':
