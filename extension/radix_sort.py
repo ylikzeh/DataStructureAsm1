@@ -1,5 +1,5 @@
 import time
-from book import Book
+from extension.book import Book
 
 # Function to check and record milestone
 def check_milestone(count, milestones_dict, start_sort_time):

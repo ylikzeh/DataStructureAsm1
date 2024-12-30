@@ -1,5 +1,5 @@
 import pandas as pd
-from book import Book 
+from extension.book import Book 
 
 # Function to import data from Excel
 def import_books_from_excel(file_path):
@@ -27,3 +27,20 @@ def write_sorted_books_to_file(books, sorted_data_path):
             f.write("---------------------------------\n")
             counter += 1
     print(f"Sorted books have been written to {sorted_data_path}")
+
+
+def write_books_to_matrix(books,status):
+    counter = 1
+    print ("---------------------------------")
+    if status:
+        print ("Sorted book matrix :")
+    else:
+        print ("Unsorted book matrix :")
+    
+    for book in books:
+        print(f"{book.isbn:<10}", end=' ') 
+        
+        if counter%10==0 and counter!=0:
+            print()
+        counter += 1
+    print ("---------------------------------")
