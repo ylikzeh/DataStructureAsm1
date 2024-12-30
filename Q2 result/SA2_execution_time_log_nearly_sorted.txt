@@ -1,0 +1,48 @@
+Execution Time Summary for datasize of 100 data: 
+Total Comparisons: 1000
+Total Moves: 1000
+Total Comparison Time: 0.002673 seconds
+Total Move Time: 0.002050 seconds
+Total Sorting Time: 0.005381 seconds
+
+Comparison time for N data:
+   Time for 100 comparisons: 0.000865 seconds
+   Time for 500 comparisons: 0.002752 seconds
+   Time for 1000 comparisons: 0.005139 seconds
+Move/Swap time for N data:
+   Time for 100 moves: 0.001062 seconds
+   Time for 500 moves: 0.002953 seconds
+   Time for 1000 moves: 0.005373 seconds
+--------------------------------
+Execution Time Summary for datasize of 500 data: 
+Total Comparisons: 5000
+Total Moves: 5000
+Total Comparison Time: 0.013087 seconds
+Total Move Time: 0.010156 seconds
+Total Sorting Time: 0.026048 seconds
+
+Comparison time for N data:
+   Time for 100 comparisons: 0.002996 seconds
+   Time for 500 comparisons: 0.004000 seconds
+   Time for 1000 comparisons: 0.006382 seconds
+Move/Swap time for N data:
+   Time for 100 moves: 0.004183 seconds
+   Time for 500 moves: 0.004942 seconds
+   Time for 1000 moves: 0.007368 seconds
+--------------------------------
+Execution Time Summary for datasize of 1000 data: 
+Total Comparisons: 10000
+Total Moves: 10000
+Total Comparison Time: 0.026059 seconds
+Total Move Time: 0.019757 seconds
+Total Sorting Time: 0.051215 seconds
+
+Comparison time for N data:
+   Time for 100 comparisons: 0.005566 seconds
+   Time for 500 comparisons: 0.006538 seconds
+   Time for 1000 comparisons: 0.007938 seconds
+Move/Swap time for N data:
+   Time for 100 moves: 0.008120 seconds
+   Time for 500 moves: 0.008868 seconds
+   Time for 1000 moves: 0.009840 seconds
+--------------------------------
